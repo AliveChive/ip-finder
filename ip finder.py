@@ -1,7 +1,6 @@
 import requests
 import pyperclip
-src = requests.get('http://checkip.dyndns.org/').text
-src = src = src[76:].replace('</body></html>','').rstrip()
+src = requests.get('https://api.ipify.org//').text
 print (src + " Is Your IP.")
 print ('Press c to copy')
 choice = input ()
